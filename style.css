@@ -7,29 +7,60 @@
 }
 
 body {
+  background-color: var(--darkBlue);
+  height: 100%;
+  font-family: 'Manrope', sans-serif;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.container {
   background-color: var(--darkGrayishBlue);
+  border-radius: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px;
+  height: 15rem;
+  min-width: 25rem;
+  width: 25rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
 }
 
 .advice-body {
   color: var(--lightCyan);
+  font-size: 28px;
+  text-align: center;
 }
 
 .advice-title {
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  font-weight: bold;
   color: var(--neonGreen);
 }
 
-.container {
-  background-color: var(--grayishBlue);
-  border-radius: 15px;
-  
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  padding: 30px;
-  width: 60%;
-}
+
 
 .new-advice {
   background-color: var(--neonGreen);
@@ -39,10 +70,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  bottom: -70px;
 }
 
+
 .new-advice:hover {
+  /* transition: all 0.5s ease-in-out; */
   box-shadow: 
-    0 0 10px 5px var(--neonGreen)
-  ;
+  0 0 5px 5px var(--neonGreen);
+}
+
+#divider {
+  background-image: url('./images/pattern-divider-desktop.svg');
+  /* margin: auto; */
+  width: 100%;
+  height: 16px;
+  
 }
