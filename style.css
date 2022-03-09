@@ -20,8 +20,22 @@ body {
 
 .container {
   background-color: var(--grayishBlue);
+  border-radius: 15px;
+  
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 30px;
+  width: 60%;
 }
 
 .new-advice {
   background-color: var(--neonGreen);
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
