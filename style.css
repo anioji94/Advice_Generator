@@ -21,13 +21,14 @@ body {
 .container {
   background-color: var(--darkGrayishBlue);
   border-radius: 15px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: 50px;
-  height: 15rem;
+  min-height: 15rem;
+  max-height: 20rem;
   min-width: 25rem;
   width: 25rem;
   position: absolute;
@@ -44,7 +45,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
 }
 
 .advice-body {
@@ -64,14 +64,14 @@ body {
 
 .new-advice {
   background-color: var(--neonGreen);
-  padding: 10px;
+  padding: 20px;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  bottom: -70px;
+  position: absolute;
+  bottom: -30px;
 }
 
 
@@ -84,7 +84,9 @@ body {
 #divider {
   background-image: url('./images/pattern-divider-desktop.svg');
   /* margin: auto; */
-  width: 100%;
+  width: 90%;
   height: 16px;
+  position: absolute;
+  bottom: 60px;
   
 }
