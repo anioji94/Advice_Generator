@@ -34,8 +34,15 @@ body {
 .new-advice {
   background-color: var(--neonGreen);
   padding: 10px;
+  border: none;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.new-advice:hover {
+  box-shadow: 
+    0 0 10px 5px var(--neonGreen)
+  ;
 }
