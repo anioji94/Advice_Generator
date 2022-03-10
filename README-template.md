@@ -24,87 +24,72 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- 
+- Get random bits of advice whenever they want (when they're connected to the internet)
+
+- Get a new random bit of advice when they're done digesting the current one.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./design/Desktop-Preview.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Not Live yet!](https://your-solution-url.com)
+- Live Site URL: [Not Live yet!](https://your-live-site-url.com)
 
 ## My process
+
+- My process was to first establish a connection to the Advice API using my code. This meant console logging an advice slip object with the help of the documentation on the website.
+
+- After logging the object to the console, I designed a basic HTML structure using what I know about how the Advice Slip Object is structured.
+
+- I connected the relevant elements with the advice slip object such that pressing the button would generate a new advice slip and display the information correctly
+
+- Once I had connected the API to the elements in a way that made sense to me, I began styling the page to match the design provided by FrontendMentor.
+
+- I am now deploying it to Heroku.
+
+- My next steps will be to make the design responsive to Mobile Users.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Javascript
+- [Advice Slip API](https://api.adviceslip.com) 
+
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to connect an API with HTML elements. I used the Fetch API present in the browser's Javascript Engine to make the calls.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.new-advice:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 
+  0 0 5px 5px var(--neonGreen);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I'm quite proud of this CSS hover animation. When you hover the mouse over the `new-advice` button, it slowly glows green over the duration of `0.5s`.
+I'm still trying to figure out how to reverse the animation when the mouse hovers off. I've tried using the same transition attribute on the original element's styling, however that makes a new erroneous animation when the element loads.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- My CSS is not as responsive as I'd like. I'll be making it more responsive to the length of the advice body. Some advice is really short but some advice can run on longer than expected. The box is currently big enough to accomodate the biggest string I've seen so far, however I can't get it to change height depending on the length of the text. This would be a game changer.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I'd like to write cleaner CSS. Currently I think some redundant lines of CSS are in my stylesheet.
+
+- Soon I'll make the website responsive to mobile phones.
+
+- This should go up on Heroku soon!
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Glow](https://superdevresources.com/css-button-glow-effect/) - This is where I learned about how to do a glow effect on CSS. Yes it's true - just make a box shadow the same colour as the element!
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/) - Sorry for the long tutorial but this really helped me understand HTML and CSS. There is a lot going on here. By far the hardest part of this project is the CSS!
 
-## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

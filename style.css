@@ -10,12 +10,6 @@ body {
   background-color: var(--darkBlue);
   height: 100%;
   font-family: 'Manrope', sans-serif;
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
 }
 
 .container {
@@ -28,7 +22,8 @@ body {
 
   padding: 50px;
   min-height: 15rem;
-  max-height: 17rem;
+  height: 18rem;
+  max-height: 25rem;
   min-width: 25rem;
   width: 25rem;
   position: absolute;
@@ -45,6 +40,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 15px;
+  height: fit-content;
 }
 
 .advice-body {
@@ -76,7 +73,7 @@ body {
 
 
 .new-advice:hover {
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
   box-shadow: 
   0 0 5px 5px var(--neonGreen);
 }
@@ -88,5 +85,4 @@ body {
   height: 16px;
   position: absolute;
   bottom: 60px;
-  
 }
