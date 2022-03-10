@@ -2,6 +2,8 @@
 
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+Live Site available down below!
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -32,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Not Live yet!](https://your-solution-url.com)
-- Live Site URL: [Not Live yet!](https://your-live-site-url.com)
+- Live Site URL: [Here it is!](https://gentle-earth-70051.herokuapp.com/)
 
 ## My process
 
@@ -81,8 +82,6 @@ I'm still trying to figure out how to reverse the animation when the mouse hover
 - I'd like to write cleaner CSS. Currently I think some redundant lines of CSS are in my stylesheet.
 
 - Soon I'll make the website responsive to mobile phones.
-
-- This should go up on Heroku soon!
 
 ### Useful resources
 
